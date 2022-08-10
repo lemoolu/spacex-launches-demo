@@ -23,14 +23,15 @@ export default function IndexPage() {
   const [drawerVisible, setDrawerVisible] = useState(false);
   const [launchDetail, setLaunchDetail] = useState<ILaunch>();
 
+  // Drawer show hidden controls
   const showDrawer = () => {
     setDrawerVisible(true);
   };
-
   const onClose = () => {
     setDrawerVisible(false);
   };
 
+  // get launches past handler
   const handleGetLaunchesPast = (pagination) => {
     setLaunchesPastLoading(true);
     getLaunchesPast({
@@ -48,10 +49,12 @@ export default function IndexPage() {
     });
   };
 
+  // Triggered when the pagination changes
   const handleTableChange = (pagination) => {
     handleGetLaunchesPast(pagination);
   };
 
+  // Set details page display content
   const setDetailSel = (record: ILaunch) => {
     setLaunchDetail(record);
     showDrawer();
@@ -125,7 +128,7 @@ export default function IndexPage() {
             ),
           },
         ]}
-        rowKey={(record: Launch) => record.id}
+        rowKey={(record: ILaunch) => record.id}
         dataSource={launchesPast}
         pagination={{ ...launchesPagination, showSizeChanger: false }}
         loading={launchesPastLoading}

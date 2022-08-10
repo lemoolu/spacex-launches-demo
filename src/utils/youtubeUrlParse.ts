@@ -1,3 +1,8 @@
+/**
+ * parse url to youtube can play
+ * @param url string
+ * @returns string
+ */
 export default function (url?: string) {
   if (!url) {
     return null;

@@ -81,6 +81,7 @@ export interface ILaunchsNextResult {
 
 /**
  * get launchs next data
+ * @returns Promise<>
  */
 export function getLaunchsNext(): Promise<ILaunchsNextResult> {
   const query = `
@@ -108,6 +109,11 @@ export function getLaunchsNext(): Promise<ILaunchsNextResult> {
   return request(query);
 }
 
+/**
+ * getLaunchesPastResult
+ * get the totalcount of launches past
+ * @returns Promise<>
+ */
 export function getLaunchesPastResult() {
   const query = `
   {
