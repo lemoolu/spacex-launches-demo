@@ -1,12 +1,21 @@
 # spacex-launches-demo
 
-this is a demo projecst using the SpaceX graphql API
+This is a demo project using the SpaceX graphql API
 
-## view
-open the dist/index.html by chrome
+## Screenshots
+1. The default page, including launches past and launches next (pagination will load slowly because the api response time is long)
+![](https://xizhi-note-imgages.oss-cn-hangzhou.aliyuncs.com/20220810121853.png)
+2. You can click on the page to view other lists
+![](https://xizhi-note-imgages.oss-cn-hangzhou.aliyuncs.com/20220810121950.png)
+3. Click for details to view the video
+![](https://xizhi-note-imgages.oss-cn-hangzhou.aliyuncs.com/20220810122017.png)
+
+## View Result
+1. `cd spacex-launches-demo/dist`
+2. `anywhere`
 
 
-## Getting Started
+## Develop
 
 Install dependencies,
 

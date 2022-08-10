@@ -1,5 +1,5 @@
 /**
- * Page component
+ * Page
  * @description Common configuration for each page
  */
 import React from 'react';
